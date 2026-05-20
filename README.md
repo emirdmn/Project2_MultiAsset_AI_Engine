@@ -47,19 +47,10 @@ The engine evaluates 5 highly distinct historical indicators for each segregated
 ---
 
 ## 🚀 Installation & Deployment Run Guide
+To configure deployment dependencies and initiate the platform interface on any target workstation running a standard Python environment, ensure that `dashboard.py` and the custom **`run_panel.bat`** automation script are placed inside the exact same root directory. 
 
-### Step 1: Install Technical Dependencies
-Ensure you are running **Python 3.11+** or **Python 3.14** environments. Open your terminal and deploy the required core libraries using the following command:
+For an automated quick-launch, double-click the **`run_panel.bat`** file. The batch bootloader script will automatically check for the mandatory libraries (`pip install streamlit pandas numpy scikit-learn`), execute a silent installation in background `--quiet` mode if any dependencies are missing on the target host PC, map local system paths, bypass native command line PATH constraints, target internal Python binaries, and seamlessly spin up the local Streamlit server instantly. 
+
+Alternatively, if you prefer executing the entire platform manually through standard terminal consoles, open your terminal inside the project root directory, verify your environment, deploy the required core libraries using the command `pip install streamlit pandas numpy scikit-learn`, and invoke the platform web deployment server manually using the following execution string:
 ```bash
-pip install streamlit pandas numpy scikit-learn
-
-### Step 2: Automated Quick-Launch via Windows Batch Script (run_panel.bat)
-To deploy and ignite the framework instantly without manual terminal execution, follow these directives:
-
-1-Open your core structural project repository folder.
-
-2-Ensure that both dashboard.py and the run_panel.bat script file are located within the identical root directory.
-
-3-Double-click the start.bat file.
-
-4-The automated batch bootloader will immediately map your system parameters, bypass Windows command line PATH constraints, fetch your local Python AppData libraries, and spin up the multi-layer AI dashboard local server seamlessly.
+python -m streamlit run dashboard.py
