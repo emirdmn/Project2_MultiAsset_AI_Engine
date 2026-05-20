@@ -52,3 +52,14 @@ The engine evaluates 5 highly distinct historical indicators for each segregated
 Ensure you are running **Python 3.11+** or **Python 3.14** environments. Open your terminal and deploy the required core libraries using the following command:
 ```bash
 pip install streamlit pandas numpy scikit-learn
+
+### Step 2: Automated Quick-Launch via Windows Batch Script (run_panel.bat)
+To deploy and ignite the framework instantly without manual terminal execution, follow these directives:
+
+1-Open your core structural project repository folder.
+
+2-Ensure that both dashboard.py and the run_panel.bat script file are located within the identical root directory.
+
+3-Double-click the start.bat file.
+
+4-The automated batch bootloader will immediately map your system parameters, bypass Windows command line PATH constraints, fetch your local Python AppData libraries, and spin up the multi-layer AI dashboard local server seamlessly.
